@@ -13,6 +13,13 @@ import discord
 from redbot.core import commands
 import re
 import aiohttp
+=======
+from redbot.core import commands
+import discord
+import re
+
+__red_end_user_data_statement__ = "This cog does not store any user data."
+>>>>>>> 61402e4 (Initial commit: Add emoji_stealer cog)
 
 class EmojiStealer(commands.Cog):
     """Steal custom emojis from other servers."""
@@ -20,6 +27,7 @@ class EmojiStealer(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
+<<<<<<< HEAD
     @commands.command()
     async def steal(self, ctx, emoji: str, name: str = None):
         """
@@ -60,3 +68,35 @@ class EmojiStealer(commands.Cog):
             await ctx.send("❌ I need the `Manage Emojis and Stickers` permission.")
         except discord.HTTPException as e:
             await ctx.send(f"❌ Failed to add emoji: {e}")
+=======
+    @commands.command(name="steal")
+    @commands.guild_only()
+    async def steal_emoji(self, ctx, emoji: str, name: str = None):
+        """Steal a custom emoji from another server and upload it here.
+
+        Usage: !steal <:emoji:ID> [newname]
+        """
+        try:
+            match = re.match(r"<a?:(\\w+):(\\d+)>", emoji)
+            if not match:
+                return await ctx.send("❌ Invalid emoji format.")
+
+            emoji_name, emoji_id = match.groups()
+            emoji_url = f"https://cdn.discordapp.com/emojis/{emoji_id}.{'gif' if emoji.startswith('<a:') else 'png'}"
+            emoji_name = name or emoji_name
+
+            image_bytes = await self.bot.session.get(emoji_url)
+            if image_bytes.status != 200:
+                return await ctx.send("❌ Could not fetch emoji.")
+
+            data = await image_bytes.read()
+            await ctx.guild.create_custom_emoji(name=emoji_name, image=data)
+            await ctx.send(f"✅ Emoji `{emoji_name}` added!")
+
+        except discord.Forbidden:
+            await ctx.send("❌ I do not have permission to add emojis.")
+        except discord.HTTPException as e:
+            await ctx.send(f"❌ Discord error: {e}")
+        except Exception as e:
+            await ctx.send(f"❌ Unknown error: {e}")
+
