@@ -1,12 +1,11 @@
 {
     "name": "emoji_stealer",
-
-    "short": "Steal emojis from other servers by pasting them into chat.",
-    "description": "Allows you to steal custom emojis from other servers by pasting an emoji like <:name:id>. Optionally rename it during upload.",
+    "short": "Steal emojis from other servers.",
+    "description": "This cog lets you steal emojis from any server and add them to yours. Use !steal <emoji> [name]",
     "end_user_data_statement": "This cog does not store any user data.",
-    "install_msg": "Thanks for installing emoji_stealer! Use !steal <:emoji:ID> to import emojis from other servers.",
+    "install_msg": "Thanks for installing emoji_stealer! Use !steal <:emoji:ID> [name] to import emojis from other servers.",
     "author": [
-        "Puppy"
+        "ThatGirl-me"
     ],
     "required_cogs": {},
     "requirements": [],
@@ -19,15 +18,5 @@
     "min_bot_version": "3.5.0",
     "hidden": false,
     "disabled": false,
-=======
-    "short": "Steal emojis from other servers.",
-    "description": "This cog lets you steal emojis from any server and add them to yours.",
-    "author": ["ThatGirl-me"],
-    "install_msg": "Thanks for installing emoji_stealer! Use !steal <emoji> [name]",
-    "requirements": [],
-    "end_user_data_statement": "This cog does not store any user data.",
-    "min_bot_version": "3.5.0",
-    "tags": ["emoji", "utility", "fun"],
-
     "type": "COG"
 }
