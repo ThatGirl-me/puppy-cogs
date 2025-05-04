@@ -1,0 +1,9 @@
+{
+    "author": ["ThatGirl-me"],
+    "short": "A collection of fun and useful cogs by Puppy.",
+    "description": "This repo contains custom cogs like emoji_stealer and others, built to extend Red Discord Bot functionality.",
+    "install_msg": "Thanks for installing from the Puppy Cogs repo!",
+    "end_user_data_statement": "This repo does not store any user data.",
+    "bot_version": "3.5.0",
+    "type": "COG_REPO"
+}
