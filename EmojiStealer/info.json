@@ -1,0 +1,13 @@
+{
+    "name": "EmojiStealer",
+    "short": "Steal emojis from other servers.",
+    "description": "This cog lets you steal emojis from any server and add them to yours.",
+    "end_user_data_statement": "This cog does not store any user data.",
+    "install_msg": "Thanks for installing EmojiStealer! Use !steal <emoji> [name]",
+    "author": ["Puppy"],
+    "required_cogs": {},
+    "requirements": ["aiohttp"],
+    "tags": ["emoji", "utility", "fun"],
+    "min_bot_version": "3.5.0",
+    "type": "COG"
+}
