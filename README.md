@@ -1,4 +1,3 @@
-
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com/?lines=Welcome+to+Puppy+Cogs!;Adorable+Redbot+addons+for+everyone!&font=Fira+Code&center=true&width=440&height=45&pause=1000" alt="Typing SVG">
 </p>
@@ -10,7 +9,6 @@
   <img src="https://img.shields.io/github/license/ThatGirl-me/puppy-cogs" alt="License">
   <img src="https://img.shields.io/badge/Cogs-Cute%20%26%20Fun-pink" alt="Cogs">
 </p>
-
 
 > A small but growing collection of playful and handy Redbot cogs for your Discord server. Made with love, fluff, and a sprinkle of sparkle.
 
@@ -26,24 +24,33 @@
 ## 📦 Installation
 
 1. Add the repo to your Red instance:
-[p]repo add puppy-cogs https://github.com/ThatGirl-me/puppy-cogs
+   ```bash
+   [p]repo add puppy-cogs https://github.com/ThatGirl-me/puppy-cogs
+   ```
 
 2. Install a cog:
-[p]cog install puppy-cogs EmojiStealer
+   ```bash
+   [p]cog install puppy-cogs EmojiStealer
+   ```
 
 3. Load it:
-[p]load EmojiStealer
+   ```bash
+   [p]load EmojiStealer
+   ```
 
 ---
 
 ## 🛠️ Usage
 
-Just paste a custom emoji into chat like:
+To steal an emoji, paste it like this:
+```bash
 [p]steal <:exampleemoji:123456789012345678>
+```
 
-
-Optionally rename it:
+To rename it during upload:
+```bash
 [p]steal <:exampleemoji:123456789012345678> cutepup
+```
 
 ---
 
@@ -67,7 +74,5 @@ Optionally rename it:
 ## 📜 License
 
 MIT License – Free to use, modify, and share with fluff!
-
----
 
 <p align="center"><i>Made with snuggles and sugar by Puppy</i> 🐶✨</p>
