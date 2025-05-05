@@ -5,7 +5,7 @@ This Redbot cog is purrfect for server admins who want to quickly grab and reuse
 
 ---
 
-## 🌟 Features
+## 🌟 Features 
 
 - 📥 Paste an emoji like `<:cat:123456789012345678>` and instantly upload it to your server!
 - ✏️ Optionally rename the emoji as you import it.
