@@ -1,22 +1,73 @@
-# Puppy Cogs
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com/?lines=Welcome+to+Puppy+Cogs!;Adorable+Redbot+addons+for+everyone!&font=Fira+Code&center=true&width=440&height=45&pause=1000" alt="Typing SVG">
+</p>
+<h1 align="center">🌸🐾 Puppy Cogs for Redbot 🐾🌸</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/RedBot-3.5%2B-brightgreen" alt="RedBot Version">
+  <img src="https://img.shields.io/github/v/release/ThatGirl-me/puppy-cogs?label=latest" alt="Latest Release">
+  <img src="https://img.shields.io/github/license/ThatGirl-me/puppy-cogs" alt="License">
+  <img src="https://img.shields.io/badge/Cogs-Cute%20%26%20Fun-pink" alt="Cogs">
+</p>
 
 
-Custom Red-DiscordBot cogs by Puppy.
+> A small but growing collection of playful and handy Redbot cogs for your Discord server. Made with love, fluff, and a sprinkle of sparkle.
 
-## emoji_stealer
+---
 
-Steal emojis from other servers by pasting them in chat.
+## ✨ Features
 
-Usage:
-`!steal <:emoji:ID>` or `!steal <:emoji:ID> newname`
-=======
-Custom Red-DiscordBot cogs by ThatGirl-me.
+- `🎀 EmojiStealer`: Steal custom emojis from other servers by just pasting them in chat!
+- More adorable cogs coming soon...
 
-## emoji_stealer
+---
 
-Steal custom emojis from other servers and upload them to your server.
+## 📦 Installation
 
-### Usage
+1. Add the repo to your Red instance:
+[p]repo add puppy-cogs https://github.com/ThatGirl-me/puppy-cogs
 
-`!steal <:emoji:ID> [newname]`
+2. Install a cog:
+[p]cog install puppy-cogs EmojiStealer
 
+3. Load it:
+[p]load EmojiStealer
+
+---
+
+## 🛠️ Usage
+
+Just paste a custom emoji into chat like:
+[p]steal <:exampleemoji:123456789012345678>
+
+
+Optionally rename it:
+[p]steal <:exampleemoji:123456789012345678> cutepup
+
+---
+
+## 🧸 About
+
+- **Author**: Puppy (aka ThatGirl-me)
+- 🐾 Designed for joy, fluff, and accessibility.
+- 💬 Reach me on Discord for feedback, bugs, or cuddles.
+
+---
+
+## 💡 To-Do
+
+- [x] Finish EmojiStealer
+- [x] Create a cute README
+- [ ] Add more playful cogs
+- [ ] Add community suggestions!
+
+---
+
+## 📜 License
+
+MIT License – Free to use, modify, and share with fluff!
+
+---
+
+<p align="center"><i>Made with snuggles and sugar by Puppy</i> 🐶✨</p>
