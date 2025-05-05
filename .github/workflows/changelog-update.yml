@@ -1,0 +1,24 @@
+name: Auto Changelog Update
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Update changelog
+        run: |
+          VERSION=$(git describe --tags)
+          DATE=$(date +'%Y-%m-%d')
+          echo -e "## [$VERSION] - $DATE\n### Changed\n- _Describe your changes here._\n" | cat - CHANGELOG.md > temp && mv temp CHANGELOG.md
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add CHANGELOG.md
+          git commit -m "📝 Update changelog for $VERSION"
+          git push
